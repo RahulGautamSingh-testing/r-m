@@ -10,6 +10,7 @@
   ],
   "regexManagers": [
     {
+      "customType": "unknown",
       "description": "Update install-* Buildpack commands in Dockerfiles",
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile\\.[^/]*$"],
       "matchStrings": [
