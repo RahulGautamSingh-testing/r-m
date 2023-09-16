@@ -1,16 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "enabledManagers": ["regex"],
-  "packageRules": [
-    {
-      "matchManagers": ["regex"],
-      "groupName": "custom-regex-deps",
-      "recreateWhen": "never"
-    }
-  ],
   "regexManagers": [
     {
-      "customType": "unknown",
       "description": "Update install-* Buildpack commands in Dockerfiles",
       "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile\\.[^/]*$"],
       "matchStrings": [
